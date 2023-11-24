@@ -1,0 +1,20 @@
+# Scala/SBT
+target/
+project/target/
+project/project/
+lib_managed/
+src_managed/
+.cache/
+.history/
+dist/*
+tmp/**
+
+# IntelliJ IDEA
+.idea/
+
+# macOS
+.DS_Store
+
+# BSP (Build Server Protocol)
+.bsp/
+
