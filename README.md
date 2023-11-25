@@ -43,8 +43,7 @@ This section describes the REST API endpoints available in the Policeman Thief G
 - **Method**: GET
 - **Description**: Resets the game to its initial state. This is used to start a new game once the current game concludes.
 
-# Steps and Workflow
-## Workflow
+# Componets and Modules
 
 ### 1. Graph Loading and Parsing
 - Load and parse .ngs files using NetGameSim.
@@ -77,8 +76,9 @@ This section describes the REST API endpoints available in the Policeman Thief G
 - Remains operational until stopped, then unbinds from port and terminates actor system.
 
 ### 9. Results Writing
-- Used the `writeStatsToFile` function to output the final statistics and details of attacks to a specified file.
+- Used the `writeToLocalFile` and `writeToS3` function to output the final statistics and details of attacks to a specified file.
 
+## Steps and Workflow
 ![Description](https://drive.google.com/uc?export=view&id=1caa-G6PM2einhkms5zCKSJNs2FF_bpVz)
 
 ## Usage
@@ -157,12 +157,15 @@ This ensures that all the dependencies from build.sbt are resolved and indexed l
 `"/Users/sambhavjain/Desktop/newrepo/Policeman_Thief_Graph_Game/inputs/NetGameSimNetGraph_21-11-23-20-09-22.ngs"
 "/Users/sambhavjain/Desktop/newrepo/Policeman_Thief_Graph_Game/inputs/NetGameSimNetGraph_21-11-23-20-09-22.ngs.perturbed"
 "/Users/sambhavjain/Desktop/newrepo/Policeman_Thief_Graph_Game/outputs/report.txt"`<br>
-##### Note: The above files should be present in your local system and hence give the path accordingly
+
+or alternatively you can also run using the command sbt run in the following way:
+- Invoke the command from the terminal passing the required arguments: `sbt "run https://policethiefgame.s3.amazonaws.com/inputs/NetGameSimNetGraph_21-11-23-20-09-22.ngs https://policethiefgame.s3.amazonaws.com/inputs/NetGameSimNetGraph_21-11-23-20-09-22.ngs.perturbed https://policethiefgame.s3.amazonaws.com/output/ "`
+##### Note: The above files should be present in your local or s3 bucket system and hence give the path accordingly
 
 #### 4. Run the Main File
 Execute Main to start the project. The final output files can be found at -:<br> `/Users/sambhavjain/Desktop/newrepo/Policeman_Thief_Graph_Game/outputs/report.txt`.
 
-### 5. Run the Tests
+#### 5. Run the Tests
 To ensure the functionality and correctness of the implemented logic, execute the test suites available in the project using command `sbt test` . Test results will be displayed in the terminal, showcasing passed and failed tests.
 
 ### AWS EC2 Instance
@@ -194,12 +197,12 @@ After the automated endpoint is invoked and  completed, results can be viewed in
 Below are some glimpses for the responses produced by a game on a set of 21 nodes in the original and perturbed graph :
 
 <p align="center">
-  <img src="https://drive.google.com/uc?export=view&id=1YebMxuIk4S1eXoAQ4ZBYRlBYvi_mWNRp" width="400" alt="Description"/>
-  <img src="https://drive.google.com/uc?export=view&id=1_y5-8ym1LrFTY7gmr8ZLYdOOUBha9dTn" width="400" alt="Description"/>
+  <img src="https://drive.google.com/uc?export=view&id=1YebMxuIk4S1eXoAQ4ZBYRlBYvi_mWNRp" width="500" alt="Description"/>
+  <img src="https://drive.google.com/uc?export=view&id=1_y5-8ym1LrFTY7gmr8ZLYdOOUBha9dTn" width="500" alt="Description"/>
 </p>
 <p align="center">
-  <img src="https://drive.google.com/uc?export=view&id=13-ll1qY2zqkLrWU_-vj3RaIqUcdjkQop" width="400" alt="Description"/>
-  <img src="https://drive.google.com/uc?export=view&id=1vhBiSljz-doSIdui_qaVFrBnpw0UXmip" width="400" alt="Description"/>
+  <img src="https://drive.google.com/uc?export=view&id=13-ll1qY2zqkLrWU_-vj3RaIqUcdjkQop" width="500" alt="Description"/>
+  <img src="https://drive.google.com/uc?export=view&id=1vhBiSljz-doSIdui_qaVFrBnpw0UXmip" width="500" alt="Description"/>
 </p>
 
 
