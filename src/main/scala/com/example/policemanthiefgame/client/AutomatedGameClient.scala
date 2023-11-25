@@ -17,7 +17,6 @@ object AutomatedGameClient {
   private val logger = LoggerFactory.getLogger(AutomatedGameClient.getClass)
 
   def playGame(): Unit = {
-//    resetReportFile()
     var gamesPlayed = 0
     val gameReport = new StringBuilder
       while (gamesPlayed < numberOfGamesToPlay) {
@@ -46,7 +45,7 @@ object AutomatedGameClient {
               } else {
                 policePositions ::= position // Prepend position to policePositions
               }
-            case None => // Do nothing if position is not found
+            case None =>
           }
 
           if (response.contains("Game over")) {
@@ -144,16 +143,6 @@ object AutomatedGameClient {
         gameOverPattern.findFirstMatchIn(response).map(_.group(1))
 
       case _ => None // No position information found
-    }
-  }
-
-  private def resetReportFile(): Unit = {
-    val path = Paths.get("/Users/sambhavjain/Desktop/newrepo/Policeman_Thief_Graph_Game/outputs/report.txt")
-    try {
-      Files.deleteIfExists(path)
-      logger.info("Existing report file deleted.")
-    } catch {
-      case e: Exception => logger.error("Failed to delete the existing report file", e)
     }
   }
 }

@@ -105,19 +105,6 @@ class GameActor(perturbedGraph: MutableValueGraph[NodeObject, Action], originalG
       else state = state.copy(policePosition = nextMove)
     }
   }
-//  private def gameStateResponse(): GameState = {
-//      if (state.gameOver) {
-//        // If the game is over, return the current state including the game over message
-//        state
-//      } else {
-//        // If the game is ongoing, return the state with current positions
-//        GameState(
-//          thiefPosition = state.thiefPosition,
-//          policePosition = state.policePosition,
-//          result = None
-//        )
-//      }
-//    }
     private def gameStateResponse(): GameState = {
       if (state.gameOver) {
         // If the game is over, return the current state including the game over message
