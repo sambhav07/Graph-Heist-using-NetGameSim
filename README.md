@@ -197,12 +197,12 @@ After the automated endpoint is invoked and  completed, results can be viewed in
 Below are some glimpses for the responses produced by a game on a set of 21 nodes in the original and perturbed graph :
 
 <p align="center">
-  <img src="https://drive.google.com/uc?export=view&id=1YebMxuIk4S1eXoAQ4ZBYRlBYvi_mWNRp" width="500" alt="Description"/>
-  <img src="https://drive.google.com/uc?export=view&id=1_y5-8ym1LrFTY7gmr8ZLYdOOUBha9dTn" width="500" alt="Description"/>
+  <img src="https://drive.google.com/uc?export=view&id=1YebMxuIk4S1eXoAQ4ZBYRlBYvi_mWNRp" width="800" alt="Description"/>
+  <img src="https://drive.google.com/uc?export=view&id=1_y5-8ym1LrFTY7gmr8ZLYdOOUBha9dTn" width="800" alt="Description"/>
 </p>
 <p align="center">
-  <img src="https://drive.google.com/uc?export=view&id=13-ll1qY2zqkLrWU_-vj3RaIqUcdjkQop" width="500" alt="Description"/>
-  <img src="https://drive.google.com/uc?export=view&id=1vhBiSljz-doSIdui_qaVFrBnpw0UXmip" width="500" alt="Description"/>
+  <img src="https://drive.google.com/uc?export=view&id=13-ll1qY2zqkLrWU_-vj3RaIqUcdjkQop" width="800" alt="Description"/>
+  <img src="https://drive.google.com/uc?export=view&id=1vhBiSljz-doSIdui_qaVFrBnpw0UXmip" width="800" alt="Description"/>
 </p>
 
 
