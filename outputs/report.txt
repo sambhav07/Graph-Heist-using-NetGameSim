@@ -1,210 +1,35 @@
 Strategy: Confidence Score
 Game 1
-Thief Moves: 11
-Police Moves: 
-Game Result: Congratulations! Thief has found valuable data at node 11. Game over. Restart to play again.
+Thief Moves: 10, 6, 17, 5, 13, 19, 20, 16, 16
+Police Moves: 7, 15, 3, 4, 10, 6, 17, 5, 13
+Game Result: Thief is stuck at node 16 and cannot make a move. Game over. Restart the game.
 Game Reset: true
 ----------
 Strategy: Confidence Score
 Game 2
 Thief Moves: 16, 16
-Police Moves: 4, 10
+Police Moves: 5, 13
 Game Result: Thief is stuck at node 16 and cannot make a move. Game over. Restart the game.
 Game Reset: true
 ----------
 Strategy: Confidence Score
 Game 3
-Thief Moves: 11
-Police Moves: 
-Game Result: Congratulations! Thief has found valuable data at node 11. Game over. Restart to play again.
-Game Reset: true
-----------
-Strategy: Confidence Score
-Game 4
-Thief Moves: 19, 20, 16, 16
-Police Moves: 17, 5, 13, 19
-Game Result: Thief is stuck at node 16 and cannot make a move. Game over. Restart the game.
-Game Reset: true
-----------
-Strategy: Confidence Score
-Game 5
-Thief Moves: 20, 16, 16
-Police Moves: 5, 13, 19
-Game Result: Thief is stuck at node 16 and cannot make a move. Game over. Restart the game.
-Game Reset: true
-----------
-Strategy: Confidence Score
-Game 1
-Thief Moves: 16
-Police Moves: 16
-Game Result: Thief caught by police at node 16. Game over!!! Restart to play again.
-Game Reset: true
-----------
-Strategy: Confidence Score
-Game 2
-Thief Moves: 16, 16
-Police Moves: 13, 19
-Game Result: Thief is stuck at node 16 and cannot make a move. Game over. Restart the game.
-Game Reset: true
-----------
-Strategy: Confidence Score
-Game 3
-Thief Moves: 8
-Police Moves: 9
-Game Result: Congratulations! Thief has found valuable data at node 8. Game over. Restart to play again.
-Game Reset: true
-----------
-Strategy: Confidence Score
-Game 4
-Thief Moves: 7
-Police Moves: 
-Game Result: Congratulations! Thief has found valuable data at node 7. Game over. Restart to play again.
-Game Reset: true
-----------
-Strategy: Confidence Score
-Game 5
-Thief Moves: 19, 20, 16, 16
-Police Moves: 12, 7, 15, 3
-Game Result: Thief is stuck at node 16 and cannot make a move. Game over. Restart the game.
-Game Reset: true
-----------
-Strategy: Confidence Score
-Game 1
-Thief Moves: 16
-Police Moves: 16
-Game Result: Police caught the thief at node 16. Game over!!! Restart to play again.
-Game Reset: true
-----------
-Strategy: Confidence Score
-Game 2
-Thief Moves: 20, 16, 16
-Police Moves: 7, 15, 3
-Game Result: Thief is stuck at node 16 and cannot make a move. Game over. Restart the game.
-Game Reset: true
-----------
-Strategy: Confidence Score
-Game 3
-Thief Moves: 16, 16
-Police Moves: 3, 4
-Game Result: Thief is stuck at node 16 and cannot make a move. Game over. Restart the game.
-Game Reset: true
-----------
-Strategy: Confidence Score
-Game 4
-Thief Moves: 19, 20, 16, 16
-Police Moves: 10, 6, 17, 5
-Game Result: Thief is stuck at node 16 and cannot make a move. Game over. Restart the game.
-Game Reset: true
-----------
-Strategy: Confidence Score
-Game 5
-Thief Moves: 16
-Police Moves: 16
-Game Result: Police caught the thief at node 16. Game over!!! Restart to play again.
-Game Reset: true
-----------
-Strategy: Confidence Score
-Game 1
-Thief Moves: 16
-Police Moves: 16
-Game Result: Police caught the thief at node 16. Game over!!! Restart to play again.
-Game Reset: true
-----------
-Strategy: Confidence Score
-Game 2
-Thief Moves: 20, 16, 16
-Police Moves: 17, 5, 13
-Game Result: Thief is stuck at node 16 and cannot make a move. Game over. Restart the game.
-Game Reset: true
-----------
-Strategy: Confidence Score
-Game 3
-Thief Moves: 20, 16, 16
-Police Moves: 0, 1, 9
-Game Result: Thief is stuck at node 16 and cannot make a move. Game over. Restart the game.
-Game Reset: true
-----------
-Strategy: Confidence Score
-Game 4
-Thief Moves: 9
-Police Moves: 
-Game Result: Congratulations! Thief has found valuable data at node 9. Game over. Restart to play again.
-Game Reset: true
-----------
-Strategy: Confidence Score
-Game 5
 Thief Moves: 15
 Police Moves: 
 Game Result: Congratulations! Thief has found valuable data at node 15. Game over. Restart to play again.
 Game Reset: true
 ----------
 Strategy: Confidence Score
-Game 1
-Thief Moves: 14
-Police Moves: 14
-Game Result: Police caught the thief at node 14. Game over!!! Restart to play again.
-Game Reset: true
-----------
-Strategy: Confidence Score
-Game 2
-Thief Moves: 16
-Police Moves: 16
-Game Result: Thief caught by police at node 16. Game over!!! Restart to play again.
-Game Reset: true
-----------
-Strategy: Confidence Score
-Game 3
-Thief Moves: 16
-Police Moves: 16
-Game Result: Police caught the thief at node 16. Game over!!! Restart to play again.
-Game Reset: true
-----------
-Strategy: Confidence Score
 Game 4
-Thief Moves: 19
-Police Moves: 19
-Game Result: Thief caught by police at node 19. Game over!!! Restart to play again.
+Thief Moves: 3
+Police Moves: 2
+Game Result: Congratulations! Thief has found valuable data at node 3. Game over. Restart to play again.
 Game Reset: true
 ----------
 Strategy: Confidence Score
 Game 5
-Thief Moves: 1
-Police Moves: 
-Game Result: Congratulations! Thief has found valuable data at node 1. Game over. Restart to play again.
-Game Reset: true
-----------
-Strategy: Confidence Score
-Game 1
-Thief Moves: 20, 16, 16
-Police Moves: 12, 7, 15
-Game Result: Thief is stuck at node 16 and cannot make a move. Game over. Restart the game.
-Game Reset: true
-----------
-Strategy: Confidence Score
-Game 2
 Thief Moves: 2, 12
-Police Moves: 6
+Police Moves: 20
 Game Result: Congratulations! Thief has found valuable data at node 12. Game over. Restart to play again.
-Game Reset: true
-----------
-Strategy: Confidence Score
-Game 3
-Thief Moves: 13, 19
-Police Moves: 16, 16
-Game Result: Police is stuck at node 16 and cannot make a move. Game over. Restart the game.
-Game Reset: true
-----------
-Strategy: Confidence Score
-Game 4
-Thief Moves: 17, 5, 13, 19, 20, 16, 16
-Police Moves: 4, 10, 6, 17, 5, 13, 19
-Game Result: Thief is stuck at node 16 and cannot make a move. Game over. Restart the game.
-Game Reset: true
-----------
-Strategy: Confidence Score
-Game 5
-Thief Moves: 13, 19, 20, 16, 16
-Police Moves: 12, 7, 15, 3, 4
-Game Result: Thief is stuck at node 16 and cannot make a move. Game over. Restart the game.
 Game Reset: true
 ----------

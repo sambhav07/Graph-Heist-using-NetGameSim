@@ -83,9 +83,9 @@ object WebServerGame {
     val gameActor = system.actorOf(Props(new GameActor(perturbedGraph, originalGraph)), "gameActor")
 
     // Start the server with the route
-    val bindingFuture = Http().newServerAt("localhost", 8080).bind(route(gameActor))
+    val bindingFuture = Http().newServerAt("0.0.0.0", 8080).bind(route(gameActor))
 
-    println(s"Server online at http://localhost:8080/\nPress RETURN to stop...")
+    println(s"Server online at http://0.0.0.0:8080/\nPress RETURN to stop...")
     StdIn.readLine() // let it run until user presses return
     bindingFuture
       .flatMap(_.unbind()) // trigger unbinding from the port

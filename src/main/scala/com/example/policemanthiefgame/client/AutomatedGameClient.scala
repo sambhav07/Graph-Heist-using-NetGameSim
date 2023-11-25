@@ -12,7 +12,7 @@ import java.nio.file.{Files, Paths, StandardOpenOption}
 import scala.util.Random
 
 object AutomatedGameClient {
-  private val serverUrl = "http://localhost:8080"
+  private val serverUrl = "http://0.0.0.0:8080"
   private val numberOfGamesToPlay = 5
   private val logger = LoggerFactory.getLogger(AutomatedGameClient.getClass)
 
@@ -76,6 +76,8 @@ object AutomatedGameClient {
   }
 
   private def appendToFile(content: String): Unit = {
+//    val reportPath = "s3://policethiefgame/output/report.txt"
+//    val reportPath = "/home/ubuntu/myapp/report.txt"
     val reportPath = "/Users/sambhavjain/Desktop/newrepo/Policeman_Thief_Graph_Game/outputs/report.txt"
 
     if (reportPath.startsWith("s3://")) {
@@ -101,9 +103,14 @@ object AutomatedGameClient {
       .region(Region.US_EAST_1) // Or your preferred region
       .credentialsProvider(StaticCredentialsProvider.create(AwsBasicCredentials.create("AKIATJ7MSUGHDGZSJH52", "pFnuAFFB9jGN6njE3uct71hNNzmNSsWpbnZsvKm1")))
       .build()
-    s3Client.putObject(PutObjectRequest.builder().bucket(bucket).key(key).build(), RequestBody.fromString(content))
-    s3Client.close()
-    logger.info(s"After close")
+    try{
+    s3Client.putObject(PutObjectRequest.builder().bucket(bucket).key(key).build(), RequestBody.fromString(content))}
+    catch {
+      case e: Exception => logger.error("Error while writing to S3", e)
+    } finally {
+      s3Client.close()
+      logger.info("S3 client closed")
+    }
   }
 
   private def writeToLocalFile(content: String, filePath: String): Unit = {

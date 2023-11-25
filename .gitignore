@@ -1,7 +1,5 @@
 # Scala/SBT
 target/
-project/target/
-project/project/
 lib_managed/
 src_managed/
 .cache/

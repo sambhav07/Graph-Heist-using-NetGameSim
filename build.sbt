@@ -1,3 +1,4 @@
+
 ThisBuild / version := "0.1.0-SNAPSHOT"
 
 ThisBuild / scalaVersion := "2.13.12"
@@ -29,5 +30,17 @@ libraryDependencies ++= Seq(
   // Other necessary libraries
 )
 
+val jarName = "police_thief_game.jar"
+assembly / assemblyJarName := jarName
+
+assembly / assemblyShadeRules := Seq(
+  ShadeRule.rename("com.fasterxml.jackson.**" -> "shaded.jackson.@1").inAll
+)
 // In your build.sbt file
 mainClass in (Compile, run) := Some("com.example.policemanthiefgame.Main")
+// Merging strategies
+ThisBuild / assemblyMergeStrategy := {
+  case PathList("META-INF", _*) => MergeStrategy.discard
+  case "reference.conf" => MergeStrategy.concat
+  case _ => MergeStrategy.first
+}
