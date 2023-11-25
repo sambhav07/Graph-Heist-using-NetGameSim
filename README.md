@@ -2,7 +2,7 @@
 
 ### Email Id : sjain218@uic.edu
 
-### Video Link: https://youtu.be/3F70ekzozD8?si=P7PlXatl2ZfhJmug
+### Video Link: https://www.youtube.com/watch?v=iASwSZ3R6fg
 
 # Graph-Heist-using-NetGameSim
 
